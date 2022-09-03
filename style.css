@@ -1,0 +1,400 @@
+body{
+    background-color: #edeef0;
+    color: #434343;
+}
+
+:root{
+    --primary-color:#00adef;
+    /* --primary-color:#00aeef; */
+    --dark-grey-text:#a4a8af;
+    --light-line:#d6d9df;
+    --light-grey:#d7dae0;
+    --primary-text:#46505b;
+}
+
+
+.primary-bg{
+    background-color: var(--primary-color);
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.light-text{
+    color: var(--dark-grey-text);
+}
+
+.dark-grey-text{
+    color: var(--dark-grey-text);
+}
+
+.flx1{
+    flex:1;
+}
+
+header{
+    background: #fff ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+header .logo img{
+    width: 200px;
+}
+
+.custom-primary-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+.single-multi-btns{
+    display: flex;
+}
+
+header .single-multi-btns label{
+    background: #f3f7f7;
+    padding: 6px 12px;
+    color: bbcfd6;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.single-multi-btns div:first-child label {
+    left: 3px;
+}
+
+.single-multi-btns input:checked ~ label{
+    background: var(--primary-color);
+    color: #fff;
+    z-index: 1;
+}
+
+.single-multi-btns input{
+    display: none;
+}
+
+header .dropdown-toggle{
+background:#f4f6f7;
+border: none;
+}
+
+header .edgeDropDown{
+    border: 1px solid #cad5dd;
+    border-radius: 4px;
+}
+
+header .user-box{
+    border: 1px solid var(--light-line);
+    border-width: 0 1px 0 1px;
+    align-self: stretch;
+}
+
+header .user-img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+header .user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .user-img span{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    height: 14px;
+    width: 14px;
+    background-color: var(--primary-color);
+    font-size: 8px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .user-profile{
+    color: #353d47;
+}
+
+
+
+header .user-profile i{
+    color: var(--primary-color);
+}
+
+header i{
+    cursor: pointer;
+}
+
+/* header .straight-line{
+    height: 100%;
+    width: 1px;
+    background-color: #cad5dd;
+} */
+
+
+
+.main{
+    /* height: calc(100vh - 60px); */
+    box-sizing: border-box;
+}
+
+/* left sidebar */
+
+.left-sideBar-container{
+    width: 45px;
+}
+
+.left-sideBar{
+    background-color: #343d47;
+    height: 100vh;
+    width: 45px;
+    position: fixed;
+    z-index: 2;
+    transition: 0.3s all;
+}
+
+.left-sideBar p{
+    display: none;
+    margin-bottom: 0%;
+}
+
+.sidebar-icon{
+    width: 26px;
+    height: fit-content;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.left-sideBar-active {
+    width: 300px;
+}
+
+.left-sideBar-active p {
+    display: block;
+}
+
+/* Right section */
+.right-box{
+    width: 100%;
+}
+
+.right-content{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.round-primary-bg{
+    background-color: var(--primary-color);
+    height: 27px;
+    width: 27px ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.leaksRoiCalc .item{
+    font-size: 85%;
+    width: 16.66%;
+    color: var(--dark-grey-text) ;
+    position: relative;
+}
+
+.leaksRoiCalc .active-item{
+    color: #00adef;
+}
+
+.leaksRoiCalc .item::before{
+    content: '';
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 0%;
+    background-color: var(--light-line);
+}
+
+.leaksRoiCalc .item::after {
+    content: '';
+    height: 4px;
+    width: 80%;
+    position: absolute;
+    bottom: 8px;
+    left: 0%;
+    background-color: var(--light-line);
+}
+
+.leaksRoiCalc .active-item h6{
+    color: #46505b;
+}
+
+.leaksRoiCalc .active-item::after{
+    background-color: var(--primary-color);
+}
+
+.leaksRoiCalc .active-item .circle-grey{
+    background-color: var(--primary-color);
+}
+
+.gap170{
+    gap: 170px;
+}
+
+.leaksRoiCalc .circle-grey {
+    background: var(--light-line);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box-input{
+    text-align: center;
+    padding: 5px 4px;
+    border: 1px solid var(--light-grey);
+    color: var(--primary-text);
+    border-radius: 3px;
+
+}
+
+hr{
+    color: var(--light-grey);
+    height: 2.5px !important;
+    margin: 0%;
+}
+
+.review-abondOpp{
+    font-size: 0.9rem;
+}
+
+
+
+
+.right-arrow{
+    width: 30px;
+}
+
+
+.review-abond-img{
+    height: 35px;
+}
+
+.recovered_profit_img{
+    height: 100px;
+}
+
+.info-icon{
+    width: 24px;
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .leaksRoiCalc .item {
+            font-size: 85%;
+            width: 33%;
+            color: var(--dark-grey-text);
+            position: relative;
+        }
+    
+        .leaksRoiCalc .active-item {
+            color: #00adef;
+        }
+    
+        .leaksRoiCalc .item::before {
+            display: none;
+        }
+    
+        .leaksRoiCalc .item::after {
+            display: none;
+        }
+}
+
+@media screen and (max-width:767px) {
+
+    .leaksRoiCalc .item {
+            width: 33%;
+            padding: 0 8px;
+    }
+
+    .review-abondOpp div {
+            width: 50%;
+            padding: 0 8px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    header .logo img {
+        width: 140px;
+    }
+
+    .leaksRoiCalc .item {
+        width: 50%;
+    }
+
+    .left-sideBar-container{
+        top: 20%;
+        display: block;
+        position: fixed;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+    }
+    .open-sidebar svg{
+            background: var(--primary-color);
+            color: #fff;
+            height: 25px;
+            width: 25px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+    }
+
+    .left-sideBar{
+        height: 0;
+        width: 0px;
+        border-radius: 50%;
+        opacity: 0;
+        
+    }
+
+    .left-sideBar .sidebar-icon{
+        display: none;
+    }
+
+    .left-sideBar-active {
+        width: 200px;
+        display: block;
+        height: auto;
+        border-radius: 0;
+        opacity: 1;
+    }
+
+    .left-sideBar-active .sidebar-icon{
+        display: block;
+    }
+}
