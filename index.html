@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,8 +12,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PSD01 Conversion</title>
+    <style>
+        .tippy-tooltip.light-theme {
+            background-color: rgb(255, 255, 255);
+            color: #000;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        }
 
-    <title>Hello, world!</title>
+        .tippy-tooltip.light-theme[data-placement^='top'] .tippy-arrow {
+            border-top-color: white;
+        }
+
+        .tippy-tooltip.light-theme[data-placement^='bottom'] .tippy-arrow {
+            border-bottom-color: rgb(227, 226, 226);
+            /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); */
+        }
+
+        .tippy-tooltip.light-theme[data-placement^='left'] .tippy-arrow {
+            border-left-color: white;
+        }
+
+        .tippy-tooltip.light-theme[data-placement^='right'] .tippy-arrow {
+            border-right-color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,11 +45,9 @@
         <div class="logo py-2">
             <img src="./assets/images/logo.png" alt="">
         </div>
-        <div class="right-head d-none d-lg-flex align-items-center gap-3">
-            <div class="head-btns d-flex align-items-center gap-3 py-2">
-                <button class="custom-primary-btn">Support</button>
-
-
+        <div class="right-head d-flex align-items-center gap-3">
+            <div class="head-btns d-lg-flex d-none align-items-center gap-3 py-2">
+                <a href="" class="custom-primary-btn">SUPPORT</a>
                 <div class="single-multi-btns">
                     <div>
                         <input type="radio" name="single-multi" id="single" checked>
@@ -38,344 +58,386 @@
                         <label for="multi">Multi</label>
                     </div>
                 </div>
-
-
                 <div class="btn-group edgeDropDown">
                     <button type="button" class="btn border-1">Edge Performance Sports</button>
                     <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a>
-                            <p>location</p>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Another action</a>
-                            <p>location</p>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a>
-                            <p>location</p>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-
-                            <p>location</p>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a>
-                            <p>location</p>
-                        </li>
-                    </ul>
+                    <!-- <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Action</a>
+                         <p>location</p>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Another action</a>
+                         <p>location</p>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Something else here</a>
+                         <p>location</p>
+                     </li>
+                     <li>
+                         <hr class="dropdown-divider">
+                     
+                         <p>location</p>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Separated link</a>
+                         <p>location</p>
+                     </li>
+                     </ul> -->
                 </div>
             </div>
-
-            <div class="straight-line"></div>
-
             <div class="user-box px-md-3">
                 <div class="user-profile d-flex gap-3 align-items-center py-2">
                     <div class="user-img">
                         <img src="./assets/images/larry.png" alt="">
                         <span>12</span>
                     </div>
-                    <strong>Larry Bruce</strong>
+                    <strong class="d-none d-lg-block">Larry Bruce</strong>
                     <i class="fa-sharp fa-solid fa-chevron-down"></i>
-
                 </div>
             </div>
-
             <div class=" py-2 pe-3"><i class="fa-solid fa-power-off" style="color:#c9cdd1;"></i></div>
         </div>
     </header>
-
     <div class="main d-flex">
         <div class="left-sideBar-container  d-md-block">
-            <div class="open-sidebar d-block d-md-none "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <div class="open-sidebar d-block d-sm-none ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
             </div>
             <div class="left-sideBar">
                 <ul class="list-unstyled text-white">
-                    <li class="d-flex gap-4 px-2 py-2"><img src="./assets/images/meter.png" alt="" class="sidebar-icon">
-                        <p>location</p>
+                    <li class="d-flex gap-4 setpadding active">
+                        <img src="./assets/images/meter.png" alt="" class="sidebar-icon">
+                        <p class="sidebar-menu">Dashboard</p>
                     </li>
-                    <li class="d-flex gap-4 px-2 py-2"><img src="./assets/images/piechart.png" alt=""
-                            class="sidebar-icon">
-
-                        <p>location</p>
+                    <li class="d-flex gap-4 setpadding">
+                        <img src="./assets/images/piechart.png" alt="" class="sidebar-icon">
+                        <p class="sidebar-menu">Chart</p>
                     </li>
-                    <li class="d-flex gap-4 px-2 py-2"><img src="./assets/images/location.png" alt=""
-                            class="sidebar-icon">
-
-                        <p>location</p>
+                    <li class="d-flex gap-4 setpadding">
+                        <img src="./assets/images/location.png" alt="" class="sidebar-icon">
+                        <p class="sidebar-menu">Location</p>
                     </li>
-                    <li class="d-flex gap-4 px-2 py-2"><img src="./assets/images/users.png" alt="" class="sidebar-icon">
-                        <p>location</p>
+                    <li class="d-flex gap-4 setpadding">
+                        <img src="./assets/images/users.png" alt="" class="sidebar-icon">
+                        <p class="sidebar-menu">Users</p>
                     </li>
-                    <li class="d-flex gap-4 px-2 py-2"><img src="./assets/images/settings.png" alt=""
-                            class="sidebar-icon">
-
-                        <p>location</p>
+                    <li class="d-flex gap-4 setpadding">
+                        <img src="./assets/images/settings.png" alt="" class="sidebar-icon">
+                        <p class="sidebar-menu">Settings</p>
                     </li>
-                    <li class="d-none d-md-flex gap-4 px-2  py-2 open-sidebar"><img
-                            src="./assets/images/expand_arrow.png" alt="" class="sidebar-icon">
-
-                        <p>location</p>
+                    <li class="d-none d-md-flex gap-4 setpadding open-sidebar">
+                        <img src="./assets/images/expand_arrow.png" alt="" class="sidebar-icon">
+                        <!-- <p>location</p> -->
                     </li>
                 </ul>
             </div>
         </div>
-
         <div class="right-box px-md-3 py-3">
             <div class="right-content ">
-                <div class="d-lg-flex justify-content-between flex-xl-nowrap gap170 px-3 px-md-4 py-3"
+                <div class="d-lg-flex justify-content-between flex-xl-nowrap gap90 px-3 px-md-4 py-3"
                     style="background-color: #f9f9fa;">
                     <div class="w-auto align-self-center align-self-xl-start">
                         <h6 class="primary-color fw-bold mb-0">SALES PROCESS</h6>
                         <h3>Leaks ROI Calculator</h3>
-                        <div class="d-flex align-items-center gap-2"><span class="text-white round-primary-bg">1</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="text-white round-primary-bg">1</span>
                             <h5 class="mb-0">Abandoned
-                                Opportunities</h5>
-
+                                Opportunities
+                            </h5>
                         </div>
                     </div>
-
                     <div
                         class="d-flex flx1 leaksRoiCalc flex-wrap flex-xl-nowrap justify-content-between  gap-xl-0 mt-4 mt-lg-0">
                         <div class="item active-item mt-4 mt-lg-0">
                             <h6 class="fw-bold">Abandoned <br>
-                                Opportunities</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Opportunities
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
                                 <span>$19,245</span><span>|</span><span>4
-
                                     Units</span>
                             </p>
                             <div class="circle-grey">1</div>
                         </div>
-
-
                         <div class="item mt-4 mt-lg-0">
                             <h6 class="fw-bold">Unreturned <br>
-                                Inbound Messages</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Inbound Messages
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
-                                <span>$19,245</span><span>|</span><span>4
-
+                                <span>$33,105</span><span>|</span><span>10
                                     Units</span>
                             </p>
                             <div class="circle-grey">2</div>
                         </div>
-
                         <div class="item mt-4 mt-lg-0">
                             <h6 class="fw-bold">Missed <br>
-                                Calls</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Calls
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
-                                <span>$19,245</span><span>|</span><span>4
-
+                                <span>$13,725</span><span>|</span><span>4
                                     Units</span>
                             </p>
                             <div class="circle-grey">3</div>
                         </div>
-
                         <div class="item mt-4 mt-lg-3 mt-xl-0">
                             <h6 class="fw-bold">Digitally Capture
-                                Every Call</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Every Call
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
-                                <span>$19,245</span><span>|</span><span>4
-
+                                <span>$17,130</span><span>|</span><span>5
                                     Units</span>
                             </p>
-
                             <div class="circle-grey">4</div>
                         </div>
-
                         <div class="item mt-4 mt-lg-3 mt-xl-0">
                             <h6 class="fw-bold">Management <br>
-                                Introduction</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Introduction
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
-                                <span>$19,245</span><span>|</span><span>4
-
+                                <span>$30,000</span><span>|</span><span>10
                                     Units</span>
                             </p>
                             <div class="circle-grey">5</div>
                         </div>
-
                         <div class="item mt-4 mt-lg-3 mt-xl-0">
                             <h6 class="fw-bold">Recoverd Lost <br>
-                                Profit Recap</h6>
-                            <p class=" mb-0">Potentially recoverable:</p>
+                                Profit Recap
+                            </h6>
+                            <p class="mb-0">Potentially recoverable:</p>
                             <p class="d-flex gap-2 fw-bold">
-                                <span>$19,245</span><span>|</span><span>4
-
+                                <span>$113,205</span><span>|</span><span>33
                                     Units</span>
                             </p>
                             <div class="circle-grey">6</div>
                         </div>
                     </div>
-
                 </div>
-
-
-
                 <div class="py-4 px-4">
                     <div class="">
-                        <h5>Dealership Profit</h5>
+                        <h6 class="section-heading">Dealership Profit</h6>
                         <div class="d-flex align-items-center gap-5">
-                            <p class="mb-0 ">What is your dealerships average front and back gross profit right
-                                now?</p>
+                            <p class="mb-0 text">What is your dealerships average front and back gross profit right
+                                now?
+                            </p>
                             <div class="align-self-end mt-3 mt-md-0">
                                 <input type="text" value="$3000" readonly class="box-input text-end" size="5" />
                             </div>
                         </div>
-
                     </div>
-
                 </div>
                 <hr>
-
                 <div class="p-3 p-md-4">
-                    <h5>Review Abandoned Opportunities</h5>
+                    <h6 class="section-heading">Review Abandoned Opportunities</h6>
                     <div class="review-abondOpp d-flex justify-content-between gap-md-4 py-4 flex-wrap flex-xl-nowrap">
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/sales_per_day.png" alt="" class="review-abond-img"> 21
                             </h5>
-                            <p>Abandonen Sales
-                                per day <span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
+                            <div>
+                                Abandonen Sales
+                                per day
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat
+                                 tempore
+                                 error cumque excepturi
+                                 </p> -->
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/sales_per_month.PNG" alt="" class="review-abond-img">483
                             </h5>
-                            <p>Abandonen Sales
-                                per day <span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
+                            <div>
+                                Abandonen Sales
+                                per month
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat
+                                 tempore
+                                 error cumque excepturi
+                                 </p> -->
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
-                                <img src="./assets/images/recoverable_opportunity.PNG" alt=""
+                                <img src="./assets/images/recoverable_opportunity.png" alt=""
                                     class="review-abond-img">22%
                             </h5>
-                            <p>Recoverable
-                                Opportunity <span><img src="./assets/images/info_icon.png" alt=""
-                                        class="info-icon"></span></p>
+                            <div>
+                                Recoverable
+                                Opportunity
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat
+                                 tempore
+                                 error cumque excepturi
+                                 </p> -->
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/reviews.png" alt="" class="review-abond-img"><span>106/<small
                                         class="fs-6">month</small><br>
                                     5/<small class="fs-6">day</small></span>
                             </h5>
-                            <p>reviews <span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
+                            <div>
+                                Reviews
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat
+                                 tempore
+                                 error cumque excepturi
+                                 </p> -->
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/recoverable_reviewed.PNG" alt="" class="review-abond-img">20%
                             </h5>
-                            <p>Recoverable
-                                reviewed<span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
+                            <div>
+                                Recoverable
+                                reviewed
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <p class="tooltip-custom mb-0 px-4 py-2">
+                                        Recoverable means, that they didn't buy because of a reason. Eg: Price or
+                                        Payment too high, Not enough for trade, Backed out, Unit Not Available
+                                    </p>
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/increasing_arrow.png" alt="" class="review-abond-img">21
                             </h5>
-                            <p>Additional gross profit
-                                available by reviewing<span><img src="./assets/images/info_icon.png" alt=""
-                                        class="info-icon"></span></p>
+                            <div>
+                                Additional gross profit
+                                available by reviewing<span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat
+                              tempore
+                              error cumque excepturi
+                              </p> -->
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
-                        <div>
+                        <div class="item position-relative">
                             <h5 class="primary-color fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/additional_gross_profit.png" alt=""
                                     class="review-abond-img">$63,000
                             </h5>
-                            <p>Additional gross profit
-                                available by reviewing <span><img src="./assets/images/info_icon.png" alt=""
-                                        class="info-icon"></span></p>
+                            <div>
+                                Additional gross profit
+                                available by reviewing
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt="">
+                                    <!-- <p class="tooltip-custom mb-0 px-4 py-2">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab
+                                 repellat
+                                 tempore
+                                 error cumque excepturi
+                                 </p> -->
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <hr>
-
-
                 <div class="d-md-flex gap-5 py-4 px-4">
                     <div class="col-12 col-md-6">
                         <div class="">
-                            <h5>More deals to close</h5>
-
+                            <h6 class="section-heading">More deals to close</h6>
                         </div>
                         <div class="d-md-flex gap-5">
-                            <p class="mb-0 ">How many more deals do you think you could close, if you could see
+                            <p class="mb-0 text">How many more deals do you think you could close, if you could see
                                 one place
                                 all of the recoverable abandoned
-                                opportunities your dealership has?</p>
-
+                                opportunities your dealership has?
+                            </p>
                             <div class="d-flex gap-4 align-items-center">
                                 <input type="text" value="4" readonly
                                     class="box-input align-self-center px-2 mt-2 mt-md-0" size="1" />
                                 <img src="./assets/images/arrow.png" alt="" class="right-arrow">
-
                             </div>
-
                         </div>
                     </div>
-
-
-
-                    <div class="col-md-4 mt-3 mt-md-0"><img src="./assets/images/recovered_profit.png" alt=""
-                            class="img-fluid recovered_profit_img">
+                    <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="d-flex blue-img">
+                            <div><img src="./assets/images/dollar_increasing_arrow.png" alt=""></div>
+                            <div>
+                                <h1 class="primary-color mb-0 fw-bolder">$12,000</h1>
+                                <h5 class="primary-color mb-0 fw-bold">IN RECOVERED PROFIT</h5>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
                 <hr>
-
-                <div class="d-md-flex py-4 px-4 gap-5">
-                    <div class="d-md-flex col-12 col-md-6 gap-5">
+                <div class="d-md-flex py-4 px-4 gap-5 flex-wrap">
+                    <div class="d-md-flex col-12 col-md-8 col-xl-6 gap-5">
                         <div class="">
-                            <h5 class="dark-grey-text">Not reviewing abandoned opportunities sunk marketing costs</h5>
+                            <h6 class="dark-grey-text section-heading">Not reviewing abandoned opportunities sunk
+                                marketing costs
+                            </h6>
                             <div class="d-md-flex gap-5">
-                                <p class="mb-0 ">The average dealerships spends $25 for each opportunity to sell
+                                <p class="mb-0 text">
+                                    The average dealerships spends $25 for each opportunity to sell
                                     something they get. If you think it’s not realistic,
-                                    what number do you think it is?</p>
+                                    what number do you think it is? <span class="info-icon">
+                                        <img src="./assets/images/info_icon.png" alt=""
+                                            data-tippy-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat">
 
-                                <div class="d-flex gap-4 align-items-center">
+                                    </span>
+                                </p>
+                                <div class="d-none d-xl-flex gap-4 align-items-center">
                                     <input type="text" value="$5" readonly
                                         class="box-input align-self-center px-2 mt-2 mt-md-0" size="1" />
                                     <img src="./assets/images/arrow.png" alt="" class="right-arrow">
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                     <div class="d-md-flex justify-content-between gap-4 align-items-center mt-4 mt-md-0">
                         <div class="d-flex flex-column">
                             <h4 class="dark-grey-text fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/delete.png" alt="" class="review-abond-img">$7,245
                             </h4>
-                            <p>Abandonen Sales
-                                per day <span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
+                            <div class="mb-0 text">
+                                Sunk marketing costs<br> each month
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt=""
+                                        data-tippy-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat">
+
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
@@ -383,9 +445,14 @@
                             <h4 class="dark-grey-text fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/dollar.png" alt="" class="review-abond-img">$19,245
                             </h4>
-                            <p>Recoverable
-                                Opportunity <span><img src="./assets/images/info_icon.png" alt=""
-                                        class="info-icon"></span></p>
+                            <div class="mb-0 text">
+                                Potentially <br>recovered
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt=""
+                                        data-tippy-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat">
+
+                                </span>
+                            </div>
                         </div>
                         <span class="d-none d-lg-inline"><img src="./assets/images/arrow.png" alt=""
                                 class="right-arrow"></span>
@@ -393,38 +460,52 @@
                             <h4 class="dark-grey-text fw-bolder d-flex align-items-center">
                                 <img src="./assets/images/increasing_arrow_grey.png" alt="" class="review-abond-img">4
                             </h4>
-                            <p>reviews <span><img src="./assets/images/info_icon.png" alt="" class="info-icon"></span>
-                            </p>
-                            </div5 </div>
+                            <div class="mb-0 text">
+                                Inreased <br>unit sales
+                                <span class="info-icon">
+                                    <img src="./assets/images/info_icon.png" alt=""
+                                        data-tippy-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ab repellat">
 
+                                </span>
+                            </div>
                         </div>
-
-
-
                     </div>
                 </div>
-
                 <hr>
-
                 <div class="text-end px-4 py-5">
-                    <button class="border-0 primary-bg text-white rounded-1 px-3 py-2">Unreturned Inbound
-                        messages</button>
+                    <button class="border-0 primary-bg text-white rounded-1 px-3 py-2">
+                        Unreturned Inbound
+                        Messages
+                        <strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </strong>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+    <script>
+        tippy('[data-tippy-content]', {
+            theme: 'light',
+            arrow: true,
+            placement: 'bottom',
+            distance: 10,
+        });
 
-
-
-
-        <!-- Optional JavaScript; choose one of the two! -->
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-
-        <script src="script.js"></script>
+    </script>
 </body>
 
 </html>
